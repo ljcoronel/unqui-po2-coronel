@@ -29,19 +29,19 @@ class CounterTestCase {
 	@Test
 	void testCantidadDePares() {
 		int cantidad= this.counter.getCantidadDePares();
-		assertEquals(cantidad, 1);
+		assertEquals(1, cantidad);
 	}
 	
 	@Test
 	void testCantidadDeImpares() {
 		int cantidad= this.counter.getCantidadDeImpares();
-		assertEquals(cantidad, 9);
+		assertEquals(9, cantidad);
 	}
 	
 	@Test
 	void testCantidadDeMultiplos() {
 		int cantidad= this.counter.getCantidadDeNumerosMultiploDe(2);
-		assertEquals(cantidad, 1);
+		assertEquals(1, cantidad);
 	}
 
 }
