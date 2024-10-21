@@ -4,7 +4,9 @@ public class MismaLetraInicial extends Filtro {
 	
 	@Override
 	protected boolean sonSimilares(WikipediaPage paginaParticular, WikipediaPage paginaAComparar) {
-		return (paginaParticular.getTitle().startsWith(paginaAComparar.getTitle()));
+		char letraParticular = paginaParticular.getTitle().charAt(0);
+		char letraAComparar = paginaAComparar.getTitle().charAt(0);
+		return (letraParticular == letraAComparar);
 	}
 
 }
